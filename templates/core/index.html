@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load markup %}
+
+{% block content %}
+<div id="showcase">
+	<div class="columns">
+		<div class="left column">
+			&nbsp;
+		</div>
+		<div class="right column">
+			<p>Singlehandedly creating <strong>accessible</strong>, <strong>usable</strong> web applications and websites since 2007</p>
+		</div>
+	</div>
+</div>
+<div class="columns">
+	<div id="cv" class="left column">
+		<h2>CV</h2>
+		<h3>Technical Skills</h3>
+		<dl>
+			<dt>Fluent In</dt>
+			<dd>Python, C, PHP, Javscript, CSS, HTML, Ruby</dd>
+
+			<dt>Frameworks</dt>
+			<dd>Django, Rails</dd>
+
+			<dt>Applications</dt>
+			<dd>Drupal, Joomla, Wordpress, Magento</dd>
+		<dl>
+
+		<h3>Education</h3>
+		<dl>
+			<dt>2003-2009</dt>
+			<dd>B. Eng. Electrical, University of Victoria</dd>
+		</dl>
+
+		<h3>Professional Experience</h3>
+		<dl>
+			<dt>2009-Present</dt>
+			<dd>Scientific Programmer, ASL Environmental Sciences</dd>
+
+			<dt>2007-Present</dt>
+			<dd>Freelance Designer/Developer</dd>
+
+			<dt>&nbsp;</dt>
+			<dd>
+		</dl>
+
+		<p><a href="http://ca.linkedin.com/in/adambard">More at LinkedIn</a></p>
+
+	</div>
+	<div id="portfolio" class="right column">
+		<h2>Portfolio</h2>
+		<ul>
+			{% for p in portfolio_items %}
+			<li>
+			<h3>
+				<a{% if p.link %} href="{{ p.link }}"{% endif %}>
+					{{ p.title }}
+				</a>
+				</h3>
+				{% if p.image %}
+					<a{% if p.link %} href="{{ p.link }}"{% endif %}>
+						<img src="{{ p.image.url }}" alt="{{ p.image_alt }}">
+					</a>
+
+				{% endif %}
+				{{ p.description|markdown }}
+
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+
+{% endblock %}
