@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load markup %}
+
+{% block content %}
+<div id="portfolio">
+   <div	class="columns">
+	<h2>Portfolio</h2>
+	{% if tag %}
+	<p class="meta">Tagged with "{{ tag }}"</p>
+	{% endif %}
+	{% for p in portfolio_items %}
+	{% if forloop.counter|divisibleby:"2" %}
+	<div class="right column">
+	{%else %}
+	<div class="column">
+	{% endif %}
+
+		<ul>
+			{% include "core/partial/portfolioitem.html" %}
+		</ul>
+	</div>
+	{% if forloop.counter|divisibleby:"2" %}
+	</div><div class="columns">
+	{% endif %}
+	{% endfor %}
+	</div>
+</div>
+<div class="clearfix"></div>
+
+{% endblock %}

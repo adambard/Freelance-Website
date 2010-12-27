@@ -293,23 +293,25 @@ header nav ul li a:hover {
 /************* BODY ****************/
 
 #main #showcase{
-	height: 200px;
-	padding: 0px 30px;
-	padding-bottom: 15px;
+	padding: 45px 30px;
+	padding-bottom: 60px;
 	margin: 0px -30px;
+	text-align: center;
 	background: transparent url('../images/seperator.png') repeat-x bottom left;
 }
 
 #showcase p{
 	font-family: georgia;
-	font-size: 1.6em;
+	font-size: 1.8em;
 	font-style: italic;
+	color: #666;
 }
 
 #showcase p strong{
 	font-family: arial;
 	font-weight: bold;
 	font-style: normal;
+	color: #222;
 }	
 #main .columns{
 	padding-top: 15px;
@@ -383,6 +385,21 @@ header nav ul li a:hover {
 
 #portfolio ul li img{
 	border: 15px solid #ccc;
+}
+
+ul.tags li{
+	display: inline;
+	color: #aaa;
+	padding: 2px 5px 2px 0px;
+}
+ul.tags li a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+}
+
+ul.tags li a:hover{
+	color: #777;
 }
 
 /************* FOOTER **************/

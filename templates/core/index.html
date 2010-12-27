@@ -3,14 +3,7 @@
 
 {% block content %}
 <div id="showcase">
-	<div class="columns">
-		<div class="left column">
-			&nbsp;
-		</div>
-		<div class="right column">
-			<p>Singlehandedly creating <strong>accessible</strong>, <strong>usable</strong> web applications and websites since 2007</p>
-		</div>
-	</div>
+		<p>Singlehandedly creating <strong>accessible</strong> and <strong>usable</strong> applications and sites since 2007</p>
 </div>
 <div class="columns">
 	<div id="cv" class="left column">
@@ -52,19 +45,7 @@
 		<h2>Portfolio</h2>
 		<ul>
 			{% for p in portfolio_items %}
-			<li>
-			<h3>
-				<a{% if p.link %} href="{{ p.link }}"{% endif %}>
-					{{ p.title }}
-				</a>
-				</h3>
-				{% if p.image %}
-					<a{% if p.link %} href="{{ p.link }}"{% endif %}>
-						<img src="{{ p.image.url }}" alt="{{ p.image_alt }}">
-					</a>
-
-				{% endif %}
-				{{ p.description|markdown }}
+			{% include "core/partial/portfolioitem.html" %}
 
 			{% endfor %}
 		</ul>
