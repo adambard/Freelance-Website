@@ -3,7 +3,7 @@ from freelance.core.models import PortfolioItem
 
 @render_to('core/index.html')
 def index(request):
-	portfolio_items = PortfolioItem.objects.all()
+	portfolio_items = PortfolioItem.objects.filter(frontpage=True)
 	return {"portfolio_items": portfolio_items}
 
 @render_to('core/portfolio.html')

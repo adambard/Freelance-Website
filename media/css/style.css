@@ -227,6 +227,18 @@ button {  width: auto; overflow: visible; }
 body{
 	background: #eee url('../images/bg.png') repeat;
 }
+
+p{
+	margin: 1.2em 0px;
+	line-height: 1.2em;
+	font-size: 1.2;
+}
+
+h2{
+	font-size: 2.4em;
+	line-height:0.6;
+	margin: 0.6em 0px;
+}
 #container{
 	background: transparent url('../images/bg-top-grad.png') repeat-x;
 }
@@ -402,6 +414,16 @@ ul.tags li a:hover{
 	color: #777;
 }
 
+.flatpage{
+	width: 600px;
+	margin: 0px auto;
+}
+
+.flatpage p{
+	margin: 1.2em auto;
+	font-size: 1.2em;
+	line-height: 1.2;
+}
 /************* FOOTER **************/
 footer{
 	background: transparent url('../images/seperator.png') repeat-x top left;
