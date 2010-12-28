@@ -428,6 +428,9 @@ ul.tags li a:hover{
 footer{
 	background: transparent url('../images/seperator.png') repeat-x top left;
 }
+footer .copy{
+	float: right;
+}
 
 
 

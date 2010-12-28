@@ -44,10 +44,10 @@
 	<div id="portfolio" class="right column">
 		<h2>Portfolio</h2>
 		<ul>
-			{% for p in portfolio_items %}
+			{% with portfolio_items|random as p %}
 			{% include "core/partial/portfolioitem.html" %}
 
-			{% endfor %}
+			{% endwith %}
 		</ul>
 	</div>
 </div>

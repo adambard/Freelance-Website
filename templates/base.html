@@ -42,8 +42,10 @@
 	<h1>{% block header %}Adam Bard, Web Developer{% endblock %}<a href="/"></a></h1>
 		<nav>
 			<ul>
-				<li><a href="/bio/">Bio</a></li>
 				<li><a href="http://posterous.adambard.com/">Blog</a></li>
+				<li><a href="/bio/">About Me</a></li>
+				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/">Home</a></li>
 			</ul>
 		</nav>
     </header>
@@ -54,7 +56,10 @@
     
     <footer>
 	{% block footer %}
-		<p>&copy; 2011 Adam Bard</p>
+		<p class="copy">&copy; 2011 Adam Bard</p>
+		<p class="contact">
+		250 419 3059<br />
+		<a href="mailto:design@adambard.com">design@adambard.com</a>
 	{% endblock %}
     </footer>
   </div> <!--! end of #container -->
