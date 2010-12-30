@@ -414,6 +414,21 @@ header nav ul li a:hover {
 	margin-bottom: 15px;
 }
 
+.morelink{
+	clear: both;
+	font-size: 1.2em;
+}
+.morelink a{
+	color: #09f;
+	
+}
+.morelink a:hover {
+	text-decoration: none;
+	color: #07b;
+}
+
+
+
 #portfolio h2{
 	background: transparent url('../images/portfolio-header.png') no-repeat;
 	text-indent: -9999px;
