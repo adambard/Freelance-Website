@@ -327,6 +327,7 @@ header nav ul li a:hover {
 }	
 #main .columns{
 	padding-top: 15px;
+	clear: both;
 }
 
 #main .columns .column{
@@ -430,6 +431,63 @@ footer{
 }
 footer .copy{
 	float: right;
+}
+
+/**** FORM ****/
+
+form ul,
+form ul li{ /* reset */
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#main form fieldset{
+	width: 600px;
+	margin: 30px auto;
+	padding: 0px;
+	position: relative;
+
+}
+
+#main form fieldset li{
+	padding-left: 200px;
+	margin: 15px 0px;
+}
+
+#main form fieldset .errorlist li{
+	/* Undo for errorlist. */
+	margin: 0px;
+	padding-left: 0px;
+}
+#main form fieldset label{
+	/* Let's try this instead of floating. */
+	position: absolute;
+	left: 0px;
+	width: 185px;
+
+	padding: 5px;
+	font-size: 1.2em;
+	color: #777;
+	text-align: right;
+}
+#main form fieldset input[type=text],
+#main form fieldset textarea,
+#main form fieldset select{
+	width: 380px;
+	font-size: 1.2em;
+	padding: 5px;
+	line-height: 1.2;
+
+	border: 1px solid #bbb;
+	border-top-color: #a0a0a0;
+
+}
+
+#main form fieldset li .errorlist{
+	padding: 5px;
+	color: #900;
+	font-weight: bold;
 }
 
 

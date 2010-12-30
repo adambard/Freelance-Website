@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Quote Request</h2>
+
+<p>Use the form below to describe your project and request a quote from me.</p>
+
+<form action="." method="post">
+	{% csrf_token %}
+	{{ form.non_field_errors }}
+	<fieldset>
+		<ul class="quote">
+			<li class="name">
+				{{ form.name.errors }}
+				<label for="id_name">Your Name</label>
+				{{ form.name }}
+			</li>
+			
+			<li class="email">
+				{{ form.email.errors }}
+				<label for="id_email">Your Email Address</label>
+				{{ form.email }}
+			</li>
+
+			<li class="description">
+				{{ form.description.errors }}
+				<label for="id_description">Please describe your project, in as much detail as possible.</label>
+				{{ form.description }}
+			</li>
+
+			<li class="submit">
+				<input type="submit" value="Request Quote" />
+			</li>
+		</ul>
+	</fieldset>
+</form>
+{% endblock %}
