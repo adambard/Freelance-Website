@@ -312,14 +312,26 @@ header nav ul li a:hover {
 	background: transparent url('../images/seperator.png') repeat-x bottom left;
 }
 
-#showcase p{
+#showcase h2,
+#showcase h3{
+	margin-top: 0px;
 	font-family: georgia;
-	font-size: 1.8em;
+	font-size: 2em;
+	margin-bottom: 0.7em;
+	line-height: 0.7em;
 	font-style: italic;
-	color: #666;
+	color: #444;
+	font-weight: normal;
+}
+#showcase h3{
+	font-size: 1.4em;
+	line-height: 1em;
+	margin: 1em 0px;
+	margin-bottom: 0px;
+	color: #999;
 }
 
-#showcase p strong{
+#showcase h2 strong{
 	font-family: arial;
 	font-weight: bold;
 	font-style: normal;
