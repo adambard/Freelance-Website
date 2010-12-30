@@ -3,8 +3,13 @@
 
 {% block content %}
 <div id="showcase">
-	<h2>Singlehandedly creating <strong>accessible</strong> and <strong>usable</strong> websites since 2007</h2>
-	<h3>I'm a freelance web developer from Victoria, BC, and I want to work with you.  <br />Learn about my <a href="/portfolio/">past projects</a> or <a href="/contact_form/">request a quote.</a></h3>
+	<div class="buttons">
+		<a class="big_button" href="/contact_form/">Request a Quote</a>
+	</div>
+		<div class="callout">
+		<h2>Singlehandedly creating <strong>accessible</strong> and <strong>usable</strong> websites</h2>
+		<h3>I'm a freelance web developer from Victoria, BC, and I want to work with you.</h3>
+	</div>
 </div>
 <div class="columns">
 	<div id="cv" class="left column">
@@ -43,7 +48,7 @@
 
 	</div>
 	<div id="portfolio" class="right column">
-		<h2>Portfolio</h2>
+		<h2><a href="/portfolio/">Portfolio</a></h2>
 		<ul>
 			{% with portfolio_items|random as p %}
 			{% include "core/partial/portfolioitem.html" %}
