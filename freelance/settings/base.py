@@ -71,5 +71,5 @@ INSTALLED_APPS = (
 	'annoying',
 
 # Project
-	'core',
+	'freelance.core',
 )

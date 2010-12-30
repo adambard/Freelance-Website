@@ -1,3 +1,4 @@
 *.swp
 *.pyc
 media/portfolio_images
+freelance/settings/__init__.py
