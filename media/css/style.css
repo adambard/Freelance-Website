@@ -274,10 +274,10 @@ header h1 a{
 
 header nav{
 	height: 65px;
+	text-align: right;
 }
 header nav ul li{
-	display: block;
-	float: right;
+	display: inline;
 	height: 65px;
 	line-height: 65px;
 
@@ -319,16 +319,16 @@ header nav ul li a:hover {
 	margin-top: 0px;
 	font-family: georgia;
 	font-size: 2em;
-	margin-bottom: 0.7em;
-	line-height: 0.7em;
+	margin-bottom: 1em;
+	line-height: 1em;
 	font-style: italic;
 	color: #444;
 	font-weight: normal;
 }
 #showcase h3{
 	font-size: 1.4em;
-	line-height: 1em;
-	margin: 1em 0px;
+	line-height: 1.4em;
+	margin: 1.14em 0px;
 	margin-bottom: 0px;
 	color: #999;
 }
@@ -509,6 +509,15 @@ ul.tags li a:hover{
 footer{
 	background: transparent url('../images/seperator.png') repeat-x top left;
 }
+footer nav ul,
+footer nav ul li{
+	list-style: none;
+	display: inline;
+}
+
+footer nav ul li{
+	margin-right: 15px;
+}
 footer .copy{
 	float: right;
 }
@@ -571,8 +580,70 @@ form ul li{ /* reset */
 }
 
 
+/*************************
+ * Corrections for different resolutions
+ */
 
 
+body.narrow #main, 
+body.narrow footer, 
+body.narrow header,
+body.narrow #showcase,
+body.narrow #showcase .callout,
+body.narrow .flatpage,
+body.narrow #main .columns .column{
+	position: static;
+	float: none;
+	clear: both;
+	width: auto;
+	margin: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+body.narrow #showcase .buttons{
+	display: none;
+}
+body.narrow header{
+	height: auto;
+	width: auto;
+	text-align: center;
+}
+body.narrow header h1{
+	margin: 0px auto;
+	width: 200px;
+	float: none;
+	margin-bottom: 15px;
+}
+body.narrow header nav,
+body.narrow header nav ul,
+body.narrow header nav ul li,
+body.narrow header nav ul li a{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.4;
+	float: none;
+	clear: both;
+	height: auto;
+	text-align: center;
+}
+
+body.mobile #cv dl,
+body.mobile #cv dl dt,
+body.mobile #cv dl dd{
+	position: static;
+	display: block;
+	float: none;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+		
+}
+body.mobile #cv dl dt{
+	margin-top: 15px;
+	color: #999;
+}
 
 
 

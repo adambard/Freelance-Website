@@ -35,18 +35,18 @@
 
 </head>
 
-<body>
+<body class="mobile narrow">
 
   <div id="container">
     <header>
 	<h1>{% block header %}Adam Bard, Web Developer{% endblock %}<a href="/"></a></h1>
 		<nav>
 			<ul>
-				<li><a href="http://posterous.adambard.com/">Blog</a></li>
-				<li><a href="/contact_form/">Quote</a></li>
-				<li><a href="/bio/">About Me</a></li>
-				<li><a href="/portfolio/">Portfolio</a></li>
 				<li><a href="/">Home</a></li>
+				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/bio/">About Me</a></li>
+				<li><a href="/contact_form/">Quote</a></li>
+				<li><a href="http://posterous.adambard.com/">Blog</a></li>
 			</ul>
 		</nav>
     </header>
@@ -56,6 +56,15 @@
     
     <footer>
 	{% block footer %}
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/bio/">About Me</a></li>
+				<li><a href="/contact_form/">Quote</a></li>
+				<li><a href="http://posterous.adambard.com/">Blog</a></li>
+			</ul>
+		</nav>
 		<p class="copy">&copy; 2011 Adam Bard</p>
 		<p class="contact">
 		250 419 3059<br />
