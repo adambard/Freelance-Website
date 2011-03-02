@@ -12,7 +12,19 @@
 	</div>
 </div>
 <div class="columns">
-	<div id="cv" class="left column">
+	<div id="portfolio" class="left column">
+		<h2><a href="/portfolio/">Portfolio</a></h2>
+		<ul>
+			{% with portfolio_items|random as p %}
+			{% include "core/partial/portfolioitem.html" %}
+
+			{% endwith %}
+			
+		</ul>
+
+		<p class="morelink"><a href="/portfolio/">View my entire portfolio</a></p>
+	</div>
+	<div id="cv" class="right column">
 		<h2>CV</h2>
 		<h3>Technical Skills</h3>
 		<dl>
@@ -46,18 +58,6 @@
 
 		<p class="morelink"><a href="http://ca.linkedin.com/in/adambard">More at LinkedIn</a></p>
 
-	</div>
-	<div id="portfolio" class="right column">
-		<h2><a href="/portfolio/">Portfolio</a></h2>
-		<ul>
-			{% with portfolio_items|random as p %}
-			{% include "core/partial/portfolioitem.html" %}
-
-			{% endwith %}
-			
-		</ul>
-
-		<p class="morelink"><a href="/portfolio/">View my entire portfolio</a></p>
 	</div>
 </div>
 
