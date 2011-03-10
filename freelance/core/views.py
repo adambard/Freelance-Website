@@ -1,8 +1,10 @@
 from annoying.decorators import render_to, ajax_request
 from freelance.core.models import PortfolioItem
 from freelance.core.forms import ContactForm
-from django.core.mail import mail_admins
+from django.core.mail import EmailMessage
 from django.http import HttpResponseRedirect
+
+from django.conf import settings
 
 @render_to('core/index.html')
 def index(request):
@@ -40,7 +42,14 @@ def contact_form(request):
 			subject = "Quote request from %s" % name
 			message = "Name: %s\nEmail: %s\n\n%s\n" % (name, email, desc)
 
-			mail_admins(subject, message, fail_silently=True)
+			
+			email_message = EmailMessage(
+					u'%s%s' % (settings.EMAIL_SUBJECT_PREFIX, subject),
+					message, settings.SERVER_EMAIL, [a[1] for a in settings.ADMINS],
+					connection=None, headers={'Reply-To': email})
+
+			email_message.send(fail_silently=True)
+
 			return HttpResponseRedirect("/thanks/")
 	else:
 		form = ContactForm()
