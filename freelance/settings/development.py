@@ -3,7 +3,7 @@ from base import *
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-PROJECT_DIR = "/home/adam/projects/freelance-site/site/"
+PROJECT_DIR = "/home/adam/Projects/freelance-env/site/"
 
 DATABASES = {
     'default': {
