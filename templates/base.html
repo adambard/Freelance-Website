@@ -67,8 +67,8 @@
 		</nav>
 		<p class="copy">&copy; 2011 Adam Bard</p>
 		<p class="contact">
-		250 419 3059<br />
 		<a href="mailto:design@adambard.com">design@adambard.com</a>
+		</p>
 	{% endblock %}
     </footer>
   </div> <!--! end of #container -->
@@ -92,8 +92,6 @@
     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
   <![endif]-->
 
-  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
   <script>
    var _gaq = [['_setAccount', 'UA-3525624-10'], ['_trackPageview']];
    (function(d, t) {
@@ -104,6 +102,20 @@
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
   </script>
+
+<script type="text/javascript">
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id',
+                   '4d97924dd9342d5963000013');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
   
 </body>
 </html>
