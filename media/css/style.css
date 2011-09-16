@@ -244,13 +244,13 @@ h2{
 }
 
 #main, footer, header{
-	padding: 15px 30px;
+	padding: 20px 30px;
 	width: 940px;
 	margin: 0px auto;
 }
 header{
-	height: 65px;
-	padding: 30px 30px 15px 30px;
+	height: 55px;
+	padding: 25px 30px 20px 30px;
 	background: transparent url('../images/seperator.png') repeat-x bottom left;
 }
 
@@ -273,13 +273,13 @@ header h1 a{
 }
 
 header nav{
-	height: 65px;
+	height: 60px;
 	text-align: right;
 }
 header nav ul li{
 	display: inline;
-	height: 65px;
-	line-height: 65px;
+	height: 60px;
+	line-height: 60px;
 
 }
 
@@ -288,6 +288,7 @@ header nav ul li a{
 	font-size: 1.4em;
 	color: #444;
 	text-shadow: #fff 1px 1px;
+	line-height: 30px;
 	padding: 5px 15px;
 }
 
@@ -307,8 +308,7 @@ header nav ul li a:hover {
 /************* BODY ****************/
 
 #main #showcase{
-	padding: 45px 30px;
-	padding-bottom: 60px;
+	padding: 40px 30px;
 	margin: 0px -30px;
 	background: transparent url('../images/seperator.png') repeat-x bottom left;
 	position: relative;
@@ -316,20 +316,18 @@ header nav ul li a:hover {
 
 #showcase h2,
 #showcase h3{
-	margin-top: 0px;
 	font-family: georgia;
 	font-size: 2em;
-	margin-bottom: 1em;
-	line-height: 1em;
+	margin: 0px 0px 20px 0px;
+	line-height: 20px;
 	font-style: italic;
 	color: #444;
 	font-weight: normal;
 }
 #showcase h3{
 	font-size: 1.4em;
-	line-height: 1.4em;
-	margin: 1.14em 0px;
-	margin-bottom: 0px;
+	line-height: 20px;
+	margin: 20px 0px;
 	color: #999;
 }
 
@@ -358,7 +356,7 @@ header nav ul li a:hover {
 	font-weight: bold;
 	padding: 0px;
 	text-decoration: none;
-	line-height: 50px;
+	line-height: 57px;
 	display: block;
 	border: 1px solid #3bf;
 	border-top-color: #9bf;
@@ -381,7 +379,7 @@ header nav ul li a:hover {
 	background: #08c;
 }
 #main .columns{
-	padding-top: 15px;
+	padding-top: 0px;
 	clear: both;
 }
 
@@ -395,35 +393,41 @@ header nav ul li a:hover {
 }
 
 #cv h2{
-	background: transparent url('../images/cv-header.png') no-repeat;
+	background: transparent url('../images/cv-header.png') no-repeat bottom left;
 	text-indent: -9999px;
-	height: 29px;
-	margin-bottom: 15px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1em;
+	margin: 20px 0px;
 }
 
 #cv h3{
-	margin: 30px 0px 15px 0px;
+	margin: 20px 0px 20px 0px;
 	font-size: 1.6em;
+	line-height: 20px;
 }
 #cv dt{
 	float: left;
 	width: 100px;
-	padding-right: 10px;
+	padding-right: 20px;
 	font-weight: bold;
 	font-size: 1.2em;
+	line-height: 20px;
 	clear: left;
 	color: #777;
 }
 
 #cv dl dd{
-	padding-left: 110px;
+	padding-left: 120px;
 	font-size: 1.2em;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
+	line-height: 20px;
 }
 
 .morelink{
 	clear: both;
 	font-size: 1.2em;
+	margin: 0px;
 }
 .morelink a{
 	color: #09f;
@@ -437,11 +441,12 @@ header nav ul li a:hover {
 
 
 #portfolio h2{
-	background: transparent url('../images/portfolio-header.png') no-repeat;
+	background: transparent url('../images/portfolio-header.png') no-repeat bottom left;
 	text-indent: -9999px;
-	height: 29px;
-	margin-bottom: 15px;
+	height: 40px;
 	position: relative;
+	line-height: 40px;
+	margin: 20px 0px;
 }
 #portfolio h2 a{
 	position: absolute;
@@ -458,13 +463,15 @@ header nav ul li a:hover {
 	margin: 0px;
 }
 #portfolio ul li h3{
-	font-size: 1.4em;
-	margin: 15px 0px;
-	margin-top: 30px;
+	font-size: 1.44em;
+	margin: 20px 0px;
+	line-height: 20px;
 }
 
 #portfolio ul li p{
-	margin: 15px 0px;
+	margin: 20px 0px;
+	font-size: 1.2em;
+	line-height: 20px;
 }
 
 #portfolio ul li h3 a{
@@ -477,13 +484,19 @@ header nav ul li a:hover {
 }
 
 #portfolio ul li img{
-	border: 15px solid #ccc;
+	border: 10px solid #ccc;
+	font-size: 1em;
+	height: 320px;
+	width: 435px;
+	margin: 0px;
+	display: block;
 }
 
 ul.tags li{
 	display: inline;
 	color: #aaa;
-	padding: 2px 5px 2px 0px;
+	line-height: 20px;
+	margin: 20px 0px 0px 0px;
 }
 ul.tags li a{
 	text-decoration: none;
@@ -508,7 +521,14 @@ ul.tags li a:hover{
 /************* FOOTER **************/
 footer{
 	background: transparent url('../images/seperator.png') repeat-x top left;
+	line-height: 20px;
 }
+
+footer p{
+	line-height: 20px;
+	margin: 20px 0px;
+}
+
 footer nav ul,
 footer nav ul li{
 	list-style: none;
@@ -519,6 +539,8 @@ footer nav ul li{
 	margin-right: 15px;
 }
 footer .copy{
+	height: 20px;
+	line-height: 20px;
 	float: right;
 }
 
@@ -541,7 +563,7 @@ form ul li{ /* reset */
 
 #main form fieldset li{
 	padding-left: 200px;
-	margin: 15px 0px;
+	margin: 20px 0px;
 }
 
 #main form fieldset .errorlist li{
@@ -613,7 +635,7 @@ body.narrow header h1{
 	margin: 0px auto;
 	width: 200px;
 	float: none;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 body.narrow header nav,
 body.narrow header nav ul,
@@ -641,7 +663,7 @@ body.mobile #cv dl dd{
 		
 }
 body.mobile #cv dl dt{
-	margin-top: 15px;
+	margin-top: 20px;
 	color: #999;
 }
 
@@ -698,4 +720,98 @@ body.mobile #cv dl dt{
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
+
+
+
+
+/* #grid. */
+
+/**
+ * Grid
+ */
+#grid{
+
+    /* Dimensions - same width as your grid with gutters */
+    width: 1000px;
+
+    /* Grid (left-aligned)
+    position: absolute;
+    top: 0;
+    left: 0;
+    */
+
+    /* Grid (centered) */
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -490px;
+	z-index: 99;
+
+}
+
+/**
+ * Vertical grid lines
+ *
+ * Set the column width taking the borders into consideration,
+ * and use margins to set column gutters.
+ */
+#grid div.vert{
+
+    width: 131px;
+    border: solid darkturquoise;
+    border-width: 0 1px;
+    margin-right: 29px;
+
+
+}
+
+#grid div.vert.first-line{
+
+    margin-left: 19px;
+
+}
+
+
+/**
+ * Horizontal grid lines, defined by your base line height
+ *
+ * Remember, the CSS properties that define the box model:
+ * visible height = height + borders + margins + padding
+ */
+#grid div.horiz{
+
+    /* 20px line height */
+    height: 19px;
+    border-bottom: 1px dotted darkgray;
+    margin: 0;
+    padding: 0;
+
+}
+
+/**
+* Classes for multiple grids
+*
+* When using more than one grid, remember to set the numberOfGrids 
+* option in the hashgrid.js file.
+*/
+#grid.grid-1 div.vert{
+
+    /* Vertical grid line colour for grid 1 */
+    border-color: darkturquoise;
+
+}
+#grid.grid-2{
+
+    /* Adjustments */
+    padding: 0 160px;
+    width: 660px;
+
+}
+#grid.grid-2 div.vert{
+
+    /* Vertical grid line colour for grid 2 */
+    border-color: crimson;
+
+}
+
 
